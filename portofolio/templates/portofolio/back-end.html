@@ -1,0 +1,36 @@
+{% extends 'portofolio/Hero_Page.html' %}
+{% load static %}
+
+{% block titulo %}
+    <title>Back-End</title>
+{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'portofolio/css/Back_End.css' %}">
+    <link rel="stylesheet" href="{% static 'portofolio/css/Nav_Footer.css' %}">
+{% endblock link %}
+
+{% block main %}
+<h1>Tecnologia Back-End</h1>
+
+<div class="back-end">
+    <p class="back-end-title">Python</p>
+    <p class="back-end-description">Python é uma linguagem de programação de alto nível amplamente utilizada no
+        desenvolvimento back-end, fornecendo uma sintaxe limpa e poderosa.</p>
+    <a class="back-end-link" href="https://www.python.org/">Saiba mais</a>
+</div>
+
+<div class="back-end">
+    <p class="back-end-title">Node.js</p>
+    <p class="back-end-description">Node.js é um ambiente de tempo de execução JavaScript assíncrono, construído com o
+        V8 do Google Chrome, que permite executar JavaScript no lado do servidor.</p>
+    <a class="back-end-link" href="https://nodejs.org/">Saiba mais</a>
+</div>
+
+<div class="back-end">
+    <p class="back-end-title">Django</p>
+    <p class="back-end-description">Django é um framework web em Python que permite desenvolver aplicativos web robustos
+        e escaláveis de maneira eficiente.</p>
+    <a class="back-end-link" href="https://www.djangoproject.com/">Saiba mais</a>
+</div>
+{% endblock %}

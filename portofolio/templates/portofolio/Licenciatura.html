@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Estilo2.css">
+    <title>Informações de Educação</title>
+</head>
+
+<body>
+<header>
+        <nav>
+            <ul>
+                <li><a href="{% url  'portofolio:Hero_Page' %}">Landing Page</a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown">Sobre mim</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="#">Licenciatura</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url  'portofolio:Engeharia_Informática' %}">Engeharia Informática</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">Educação</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url  'portofolio:Escolas' %}">Escolas</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">Apitidões_e_Competências_Pessoais</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url  'portofolio:Técnicas' %}">Técnicas</a></li>
+                                <li><a href="{% url  'portofolio:Organizativas' %}">Organizativas</a></li>
+                                <li><a href="{% url  'portofolio:Sociais' %}">Sociais</a></li>
+                                <li><a href="{% url  'portofolio:Linguística' %}">Linguísticas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{% url  'portofolio:Interesses _e_Hobbies' %}">Interesses_e_hobbies</a></li>
+                        <li><a href="{% url  'portofolio:Experiencia_Profissional' %}">Experiencia_Profissional</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">Projetos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Projetos realizados em diversas UCs</a></li>
+                        <li><a href="#">Projetos realizados por mim</a></li>
+                        <li><a href="#">Projetos de fim de curso realizados que achei interessantes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">Programação Web</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="{% url 'portofolio:Tecnologias' %}">Tecnologias Existentes</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url  'portofolio:front-end' %}">front-end</a></li>
+                                <li><a href="{% url  'portofolio:back-end' %}">back-end</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{% url  'portofolio:Laboratorios' %}">Laboratórios</a></li>
+                        <li><a href="https://www.noticiasaominuto.com/">Notícias</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">Sobre este website</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url  'portofolio:Tecnologias' %}">Tecnologias Usadas</a></li>
+                        <li><a href="{% url  'portofolio:Padrões' %}">Padrões Usados</a></li>
+                    </ul>
+                </li>
+                <li><a href="{% url  'portofolio:Contactos' %}">Contacto</a></li>
+                <li><a href="{% url 'portofolio:Hero_Page' %}">Rodapé</a></li>
+                <li>
+                    <button id="darkmode-toggle" aria-label="Toggle dark mode">
+                        <i class="fa-sharp fa-light fa-moon"></i>
+                        <i class="fa-sharp fa-light fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+</header>
+<h1>Informações de Educação</h1>
+
+<h2>Escolas</h2>
+
+<div class="school">
+    <p class="year">2016-2017</p>
+    <p class="degree">Ciências Físicas e Biológicas</p>
+    <p class="institution">C. Escolar Emanuel Kutolola</p>
+</div>
+
+<div class="school">
+    <p class="year">2018-2019</p>
+    <p class="degree">Programação de Automação Industrial</p>
+    <p class="institution">Master.D</p>
+</div>
+
+<div class="school">
+    <p class="year">2018-Now</p>
+    <p class="degree">Engenharia Informática</p>
+    <p class="institution">Universidade Lusófona de Humanidades e Tecnologias</p>
+</div>
+<script>
+    const darkmodeToggle = document.querySelector('#darkmode-toggle');
+
+    darkmodeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('darkmode');
+    });
+</script>
+</body>
+<footer id="myFooter">
+    <section>
+        <p>Wisley F. F. Da Costa | a22103352 | Programação Web 2023</p>
+    </section>
+
+</footer>
+
+</html>

@@ -1,0 +1,34 @@
+{% extends 'portofolio/Hero_Page.html' %}
+{% load static %}
+
+{% block titulo %}
+<title>Tecnologia Front-End</title>
+{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'portofolio/css/Front_End.css' %}">
+    <link rel="stylesheet" href="{% static 'portofolio/css/Nav_Footer.css' %}">
+{% endblock link %}
+
+{% block main %}
+<h1>Tecnologia Front-End</h1>
+
+	<div class="front-end">
+		<p class="front-end-title">HTML (HyperText Markup Language)</p>
+		<p class="front-end-description">HTML é a linguagem de marcação usada para estruturar e apresentar o conteúdo de uma página da web.</p>
+		<a class="front-end-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML">Saiba mais</a>
+	</div>
+
+	<div class="front-end">
+		<p class="front-end-title">CSS (Cascading Style Sheets)</p>
+		<p class="front-end-description">CSS é uma linguagem de estilo utilizada para definir a aparência e o layout dos elementos HTML em uma página da web.</p>
+		<a class="front-end-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS">Saiba mais</a>
+	</div>
+
+	<div class="front-end">
+		<p class="front-end-title">JavaScript</p>
+		<p class="front-end-description">JavaScript é uma linguagem de programação de alto nível que permite adicionar interatividade e comportamento dinâmico a uma página da web.</p>
+		<a class="front-end-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Saiba mais</a>
+	</div>
+{% endblock %}
+

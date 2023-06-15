@@ -1,0 +1,162 @@
+{% extends 'portofolio/Hero_Page.html' %}
+{% load static %}
+
+{% block titulo %}
+    <title>Tecnologias do Meu Site</title>
+{% endblock %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'portofolio/css/Tecnologias.css' %}">
+    <link rel="stylesheet" href="{% static 'portofolio/css/Nav_Footer.css' %}">
+{% endblock link %}
+
+{% block main %}
+    <h1>Tecnologias</h1>
+
+    <div class="technology">
+        <h2 class="title">Back-end: Laravel</h2>
+        <img class="logo" src="laravel_logo.png" alt="Laravel Logo">
+        <p class="description">Laravel é um framework PHP de código aberto, criado por Taylor Otwell, lançado em 2011. É
+            amplamente utilizado no desenvolvimento de aplicações web e segue o padrão MVC (Model-View-Controller).</p>
+        <p>Linguagens usadas: PHP</p>
+        <ul class="language-list">
+            <li>PHP</li>
+        </ul>
+        <a class="website-link" href="https://laravel.com" target="_blank">Site oficial do Laravel</a>
+    </div>
+
+    <div class="technology">
+        <h2 class="title">Back-end: ASP.NET</h2>
+        <img class="logo" src="aspnet_logo.png" alt="ASP.NET Logo">
+        <p class="description">ASP.NET é um framework da Microsoft para o desenvolvimento de aplicações web, lançado em
+            2002. Oferece suporte a várias linguagens de programação, incluindo C# e Visual Basic.</p>
+        <p>Linguagens usadas: C#, Visual Basic</p>
+        <ul class="language-list">
+            <li>C#</li>
+            <li>Visual Basic</li>
+        </ul>
+        <a class="website-link" href="https://dotnet.microsoft.com/apps/aspnet" target="_blank">Site oficial do
+            ASP.NET</a>
+    </div>
+
+    <div class="technology">
+        <h2 class="title">Back-end: Spring MVC</h2>
+        <img class="logo" src="spring_logo.png" alt="Spring MVC Logo">
+        <p class="description">Spring MVC é um framework Java para o desenvolvimento de aplicações web, lançado em 2005.
+            Ele
+            segue o padrão de arquitetura MVC (Model-View-Controller) e é amplamente utilizado na construção de
+            aplicativos
+            empresariais escaláveis e robustos.</p>
+        <p>Linguagens usadas: Java</p>
+        <ul class="language-list">
+            <li>Java</li>
+        </ul>
+        <a class="website-link" href="https://spring.io/projects/spring-mvc" target="_blank">Site oficial do Spring
+            MVC</a>
+    </div>
+
+    <div class="technology">
+        <h2 class="title">Front-end: Angular</h2>
+        <img class="logo" src="angular_logo.png" alt="Angular Logo">
+        <p class="description">Angular é um framework JavaScript de código aberto mantido pelo Google, lançado em 2010.
+            É amplamente utilizado no desenvolvimento de aplicações web de uma única página (SPA - Single Page
+            Applications).</p>
+        <p>Linguagens usadas: TypeScript</p>
+        <ul class="language-list">
+            <li>TypeScript</li>
+        </ul>
+        <a class="website-link" href="https://angular.io" target="_blank">Site oficial do Angular</a>
+    </div>
+
+    <div class="technology">
+        <h2 class="title">Front-end: React</h2>
+        <img class="logo" src="react_logo.png" alt="React Logo">
+        <p class="description">React é uma biblioteca JavaScript de código aberto, mantida pelo Facebook, lançada em
+            2013. É amplamente utilizada no desenvolvimento de interfaces de usuário interativas e reativas.</p>
+        <p>Linguagens usadas: JavaScript, TypeScript</p>
+        <ul class="language-list">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+        </ul>
+        <a class="website-link" href="https://reactjs.org" target="_blank">Site oficial do React</a>
+    </div>
+
+    <div class="technology">
+        <h2 class="title">Front-end: Vue</h2>
+        <img class="logo" src="vue_logo.png" alt="Vue Logo">
+        <p class="description">Vue é um framework JavaScript de código aberto, lançado em 2014. É conhecido por sua
+            simplicidade e flexibilidade, permitindo o desenvolvimento de interfaces de usuário interativas e
+            componentizadas.</p>
+        <p>Linguagens usadas: JavaScript</p>
+        <ul class="language-list">
+            <li>JavaScript</li>
+        </ul>
+        <a class="website-link" href="https://vuejs.org" target="_blank">Site oficial do Vue</a>
+    </div>
+
+    <div class="technology">
+        <h2 class="title">Front-end: Svelte</h2>
+        <img class="logo" src="svelte_logo.png" alt="Svelte Logo">
+        <p class="description">Svelte é um framework JavaScript de código aberto, lançado em 2016. Ele se diferencia por
+            compilar os componentes em tempo de construção, gerando um código otimizado para a execução.</p>
+        <p>Linguagens usadas: JavaScript</p>
+        <ul class="language-list">
+            <li>JavaScript</li>
+        </ul>
+        <a class="website-link" href="https://svelte.dev" target="_blank">Site oficial do Svelte</a>
+    </div>
+
+    <div class="technology">
+        <h2 class="title">Outras: WordPress</h2>
+        <img class="logo" src="wordpress_logo.png" alt="WordPress Logo">
+        <p class="description">WordPress é uma plataforma de gerenciamento de conteúdo (CMS - Content Management System)
+            de código aberto, lançada em 2003. É amplamente utilizado na criação de blogs, sites e lojas virtuais.</p>
+        <p>Linguagens usadas: PHP</p>
+        <ul class="language-list">
+            <li>PHP</li>
+        </ul>
+        <a class="website-link" href="https://wordpress.org" target="_blank">Site oficial do WordPress</a>
+    </div>
+
+    <div class="technology">
+        <h2 class="title">Outras: OutSystems</h2>
+        <img class="logo" src="outsystems_logo.png" alt="OutSystems Logo">
+        <p class="description">OutSystems é uma plataforma de desenvolvimento low-code, lançada em 2001. Ela permite o
+            desenvolvimento rápido de aplicações web e móveis, com pouca necessidade de codificação manual.</p>
+        <p>Linguagens usadas: Visual Basic, C#</p>
+        <ul class="language-list">
+            <li>Visual Basic</li>
+            <li>C#</li>
+        </ul>
+        <a class="website-link" href="https://www.outsystems.com" target="_blank">Site oficial do OutSystems</a>
+    </div>
+
+    <div class="technology">
+        <h2 class="title">Outras: Weebly</h2>
+        <img class="logo" src="weebly_logo.png" alt="Weebly Logo">
+        <p class="description">Weebly é uma plataforma de criação de sites e lojas virtuais, lançada em 2006. Ela
+            oferece uma interface intuitiva e ferramentas simples para criar sites profissionais sem a necessidade de
+            conhecimentos técnicos avançados.</p>
+        <p>Linguagens usadas: HTML, CSS, JavaScript</p>
+        <ul class="language-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <a class="website-link" href="https://www.weebly.com" target="_blank">Site oficial do Weebly</a>
+    </div>
+
+    <div class="technology">
+        <h2 class="title">Outras: Wix</h2>
+        <img class="logo" src="wix_logo.png" alt="Wix Logo">
+        <p class="description">Wix é uma plataforma de criação de sites, lançada em 2006. Ela permite criar sites
+            personalizados usando um construtor visual intuitivo, além de oferecer recursos de hospedagem e domínio.</p>
+        <p>Linguagens usadas: HTML, CSS, JavaScript</p>
+        <ul class="language-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <a class="website-link" href="https://www.wix.com" target="_blank">Site oficial do Wix</a>
+    </div>
+{% endblock %}
+

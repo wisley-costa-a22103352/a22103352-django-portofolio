@@ -1,0 +1,69 @@
+{% extends 'portofolio/Hero_Page.html' %}
+{% load static %}
+
+{% block titulo %}
+    <title>Engenharia Informática</title>
+{% endblock %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'portofolio/css/Engenharia_Informatica.css' %}">
+    <link rel="stylesheet" href="{% static 'portofolio/css/Nav_Footer.css' %}">
+{% endblock link %}
+
+{% block main %}
+    <h1>Engenharia Informática</h1>
+
+    <div class="course-info">
+        <h2>Sobre Engenharia Informática</h2>
+        <p>A Engenharia Informática é um campo de estudo multidisciplinar que combina conhecimentos de ciência da
+            computação, matemática, eletrônica e engenharia de software. Os engenheiros informáticos são responsáveis
+            por
+            projetar, desenvolver e manter sistemas de software e hardware para uma variedade de aplicações.</p>
+        <p>Ao preencher o formulário abaixo, você estará dando um importante passo para ingressar nesse campo promissor
+            e cheio de oportunidades.</p>
+    </div>
+
+    <form action="submit.php" method="POST">
+        <h2>Formulário de Inscrição</h2>
+        <p>Por favor, preencha o formulário abaixo para se inscrever no curso de Engenharia Informática:</p>
+
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="course">Curso:</label>
+        <input type="text" id="course" name="course" required>
+
+        <label for="academic-level">Nível Acadêmico:</label>
+        <select id="academic-level" name="academic-level" required>
+            <option value="" selected disabled>Selecione o nível acadêmico</option>
+            <option value="Secundário">Secundário</option>
+            <option value="Licenciatura">Licenciatura</option>
+            <option value="Mestrado">Mestrado</option>
+            <option value="Doutoramento">Doutoramento</option>
+        </select>
+
+        <label for="motivation">Motivo para fazer o curso:</label>
+        <textarea id="motivation" name="motivation" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div class="encouragement">
+        <h2>Comece sua jornada em Engenharia Informática!</h2>
+        <p>Se você é apaixonado por tecnologia, curioso e gosta de resolver problemas, a Engenharia Informática pode ser
+            o curso perfeito para você. Não perca a oportunidade de adquirir habilidades valiosas, abrir portas para o
+            futuro e se tornar um profissional altamente requisitado no mercado de trabalho. Comece hoje mesmo!</p>
+        <p><strong>Matricule-se em nosso curso de Engenharia Informática e prepare-se para uma carreira empolgante e
+            cheia de possibilidades!</strong></p>
+        <p>Para mais informações, entre em contato com a Lusófona pelo telefone (+351) 217 515 500 ou envie um e-mail
+            para
+            info.cul@ulusofona.pt.</p>
+        <p><em>Seja parte da revolução digital. Venha para a Engenharia Informática!</em></p>
+    </div>
+{% endblock %}
+
+
+
+
+
+
+

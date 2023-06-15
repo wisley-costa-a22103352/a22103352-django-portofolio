@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% extends 'portofolio/Hero_Page.html' %}
+{% load static %}
+
+{% block titulo %}
+    <title>Padrões Usados no Meu Site</title>
+{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'portofolio/css/Padroes.css' %}">
+    <link rel="stylesheet" href="{% static 'portofolio/css/Nav_Footer.css' %}">
+{% endblock link %}
+
+
+{% block main %}
+    <h1>Padrões Usados no Meu Site</h1>
+
+    <div class="pattern">
+        <p class="title">Responsive Web Design (RWD)</p>
+        <p class="description">O Responsive Web Design é um padrão que permite que o layout e os elementos de uma página
+            se ajustem automaticamente a diferentes tamanhos de tela, proporcionando uma experiência de visualização
+            otimizada em dispositivos móveis, tablets e desktops.</p>
+    </div>
+
+    <div class="pattern">
+        <p class="title">MVC (Model-View-Controller)</p>
+        <p class="description">O padrão MVC é uma abordagem arquitetural que divide uma aplicação em três componentes
+            principais: Model (Modelo), View (Visão) e Controller (Controlador). Isso promove a separação de
+            preocupações, facilita a manutenção e permite a reutilização de código.</p>
+    </div>
+
+    <div class="pattern">
+        <p class="title">RESTful API</p>
+        <p class="description">REST (Representational State Transfer) é um estilo de arquitetura de software que define
+            um conjunto de restrições para a criação de serviços web. Uma API RESTful segue essas restrições e permite a
+            comunicação entre sistemas de forma padronizada, utilizando métodos HTTP para realizar operações em
+            recursos.</p>
+    </div>
+
+    <div class="pattern">
+        <p class="title">Semantic HTML</p>
+        <p class="description">O Semantic HTML refere-se à prática de utilizar as tags HTML de forma semântica,
+            atribuindo significado adequado ao conteúdo. Isso não apenas melhora a acessibilidade para usuários com
+            deficiências, mas também contribui para uma melhor compreensão do conteúdo pelos mecanismos de busca e por
+            outros desenvolvedores.</p>
+    </div>
+
+    <div class="pattern">
+        <p class="title">CSS Grid</p>
+        <p class="description">CSS Grid é uma ferramenta poderosa para a criação de layouts responsivos em CSS. Ele
+            permite organizar os elementos de uma página em linhas e colunas, proporcionando maior controle sobre o
+            posicionamento e o espaçamento dos elementos, independentemente do tamanho da tela.</p>
+    </div>
+{% endblock %}
+
+

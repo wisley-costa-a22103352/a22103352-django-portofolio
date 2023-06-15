@@ -1,0 +1,38 @@
+{% extends 'portofolio/Hero_Page.html' %}
+{% load static %}
+
+{% block titulo %}
+<title>Formas de Contato</title>
+{% endblock %}
+
+{% block link %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'portofolio/css/Nav_Footer.css' %}">
+    <link rel="stylesheet" href="{% static 'portofolio/css/Contactos.css' %}">
+{% endblock %}
+
+
+
+{% block main %}
+<h1>Formas de Contato</h1>
+
+	<div class="contact">
+		<p class="title">Número de Telefone</p>
+		<p class="description">Entre em contato por telefone:</p>
+		<p><i class="fas fa-phone phone-icon"></i>+351 934 499 614</p>
+	</div>
+
+	<div class="contact">
+		<p class="title">Redes Sociais</p>
+		<p class="description">Conecte-se comigo nas redes sociais:</p>
+		<ul class="social-icons">
+			<li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+			<li><a href="https://twitter.com/WisleyFontoura" target="_blank"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="https://instagram.com/wisley_fontoura?igshid=MjEwN2IyYWYwYw==" target="_blank"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="https://www.facebook.com/wisleyfontoura" target="_blank"><i class="fab fa-facebook"></i></a></li>
+			<li><a href="https://t.me/Wisley_Costa" target="_blank"><i class="fab fa-telegram"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/wisley-costa-5b786b240" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+		</ul>
+	</div>
+{% endblock %}
+
