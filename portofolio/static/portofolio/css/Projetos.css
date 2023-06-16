@@ -5,7 +5,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-.contact {
+.technology {
     margin-bottom: 30px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -23,25 +23,25 @@ h1 {
     color: #555;
 }
 
-.phone-icon {
-    color: #555;
-    font-size: 24px;
+/* Estilo adicional */
+.logo {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.language-list {
+    margin-top: 5px;
+}
+
+.language-list li {
+    display: inline;
     margin-right: 5px;
+    color: #777;
 }
 
-.social-icons {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.social-icons li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.social-icons a {
-    color: #333;
-    font-size: 24px;
+.website-link {
+    display: block;
+    margin-top: 10px;
 }

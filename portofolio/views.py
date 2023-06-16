@@ -48,7 +48,7 @@ def Sociais(request):
 def Tecnicas(request):
     return render(request, 'portofolio/Técnicas.html')
 
-def Projetos(request):
+def Projeto(request):
     return render(request, 'portofolio/Projetos.html')
 
 def Tecnologias(request):

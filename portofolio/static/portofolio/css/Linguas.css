@@ -5,19 +5,20 @@ h1 {
     margin-bottom: 30px;
 }
 
-.laboratory {
+h2 {
+    color: #666;
     margin-bottom: 20px;
+}
+
+.skill {
+    margin-bottom: 30px;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
     background-color: #fff;
 }
 
-.laboratory-title {
+.title {
     font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.laboratory-link {
-    color: #333;
+    margin-bottom: 10px;
 }
