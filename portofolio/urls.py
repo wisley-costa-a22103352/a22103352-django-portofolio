@@ -26,7 +26,7 @@ urlpatterns = [
     path('Contactos', views.Contactos, name='Contactos'),
     path('front-end', views.front_end, name='front-end'),
     path('back-end', views.back_end, name='back-end'),
-    path('Blog', views.Blog, name='Blog'),
+    path('blog', views.blog, name='blog'),
 
 
     path('wavesBackground', views.wavesBackground, name='wavesBackground'),

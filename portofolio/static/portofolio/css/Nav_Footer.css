@@ -1,3 +1,18 @@
+/* Estilos para telas com largura máxima de 600px */
+@media screen and (max-width: 600px) {
+    /* Defina os estilos apropriados para o layout em telas pequenas */
+}
+
+/* Estilos para telas com largura entre 601px e 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Defina os estilos apropriados para o layout em telas médias */
+}
+
+/* Estilos para telas com largura maior que 1024px */
+@media screen and (min-width: 1025px) {
+    /* Defina os estilos apropriados para o layout em telas grandes */
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -62,19 +77,18 @@ nav ul li a:hover {
     display: block;
 }
 
-footer {
-    /* definindo altura e cor */
-    height: 5vh;
+#myFooter {
+    /* Definindo altura mínima para o footer */
+    min-height: 3vh;
     background: black;
     color: white;
     padding: 10px;
     text-align: center;
-
-    /* fixar o rodapé no final da página */
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 9999; /* Defina um valor alto para a propriedade z-index */
 }
 
 

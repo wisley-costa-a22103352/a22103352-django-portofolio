@@ -6,90 +6,93 @@
 <head>
     <meta charset="UTF-8">
     {% block titulo %}
-     <title>Minha Carta de Apresentação</title>
+        <title>Minha Carta de Apresentação</title>
     {% endblock %}
+
+    <link rel="stylesheet" href="{% static 'portofolio/css/wavesBackground.css' %}">
 
     {% block link %}
         <link rel="stylesheet" href="{% static 'portofolio/css/Estilo1.css' %}">
         <link rel="stylesheet" href="{% static 'portofolio/css/Nav_Footer.css' %}">
+
     {% endblock link %}
 
 </head>
 
 <body>
 <header>
-        <nav>
-            <ul>
-                <li><a href="{% url  'portofolio:Hero_Page' %}">Landing Page</a></li>
-                <li class="dropdown">
-                    <a data-toggle="dropdown">Sobre mim</a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-submenu">
-                            <a href="#">Licenciatura</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{% url  'portofolio:Engeharia_Informática' %}">Engeharia Informática</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                            <a href="#">Educação</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{% url  'portofolio:Escolas' %}">Escolas</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                            <a href="#">Apitidões_e_Competências_Pessoais</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{% url  'portofolio:Técnicas' %}">Técnicas</a></li>
-                                <li><a href="{% url  'portofolio:Organizativas' %}">Organizativas</a></li>
-                                <li><a href="{% url  'portofolio:Sociais' %}">Sociais</a></li>
-                                <li><a href="{% url  'portofolio:Linguística' %}">Linguísticas</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="{% url  'portofolio:Interesses _e_Hobbies' %}">Interesses_e_hobbies</a></li>
-                        <li><a href="{% url  'portofolio:Experiencia_Profissional' %}">Experiencia_Profissional</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" data-toggle="dropdown">Projetos</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Projetos realizados em diversas UCs</a></li>
-                        <li><a href="#">Projetos realizados por mim</a></li>
-                        <li><a href="#">Projetos de fim de curso realizados que achei interessantes</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" data-toggle="dropdown">Programação Web</a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-submenu">
-                            <a href="#">Tecnologias Existentes</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{% url  'portofolio:front-end' %}">front-end</a></li>
-                                <li><a href="{% url  'portofolio:back-end' %}">back-end</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="{% url  'portofolio:Laboratorios' %}">Laboratórios</a></li>
-                        <li><a href="https://www.noticiasaominuto.com/">Notícias</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Blog</a></li>
-                <li class="dropdown">
-                    <a href="#" data-toggle="dropdown">Sobre este website</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{% url  'portofolio:Tecnologias' %}">Tecnologias Usadas</a></li>
-                        <li><a href="{% url  'portofolio:Padrões' %}">Padrões Usados</a></li>
-                    </ul>
-                </li>
-                <li><a href="{% url  'portofolio:Contactos' %}">Contacto</a></li>
-                <li><a href="{% url 'portofolio:Hero_Page' %}">Rodapé</a></li>
-                <li>
-                    <button id="darkmode-toggle" aria-label="Toggle dark mode">
-                        <i class="fa-sharp fa-light fa-moon"></i>
-                        <i class="fa-sharp fa-light fa-sun"></i>
-                    </button>
-                </li>
-            </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li><a href="{% url  'portofolio:Hero_Page' %}">Landing Page</a></li>
+            <li class="dropdown">
+                <a data-toggle="dropdown">Sobre mim</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                        <a href="#">Licenciatura</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url  'portofolio:Engeharia_Informática' %}">Engeharia Informática</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a href="#">Educação</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url  'portofolio:Escolas' %}">Escolas</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a href="#">Apitidões_e_Competências_Pessoais</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url  'portofolio:Técnicas' %}">Técnicas</a></li>
+                            <li><a href="{% url  'portofolio:Organizativas' %}">Organizativas</a></li>
+                            <li><a href="{% url  'portofolio:Sociais' %}">Sociais</a></li>
+                            <li><a href="{% url  'portofolio:Linguística' %}">Linguísticas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{% url  'portofolio:Interesses _e_Hobbies' %}">Interesses_e_hobbies</a></li>
+                    <li><a href="{% url  'portofolio:Experiencia_Profissional' %}">Experiencia_Profissional</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Projetos</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Projetos realizados em diversas UCs</a></li>
+                    <li><a href="#">Projetos realizados por mim</a></li>
+                    <li><a href="#">Projetos de fim de curso realizados que achei interessantes</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Programação Web</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                        <a href="#">Tecnologias Existentes</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url  'portofolio:front-end' %}">front-end</a></li>
+                            <li><a href="{% url  'portofolio:back-end' %}">back-end</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{% url  'portofolio:Laboratorios' %}">Laboratórios</a></li>
+                    <li><a href="https://www.noticiasaominuto.com/">Notícias</a></li>
+                </ul>
+            </li>
+            <li><a href="{% url 'portofolio:blog' %}">Blog</a></li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Sobre este website</a>
+                <ul class="dropdown-menu">
+                    <li><a href="{% url  'portofolio:Tecnologias' %}">Tecnologias Usadas</a></li>
+                    <li><a href="{% url  'portofolio:Padrões' %}">Padrões Usados</a></li>
+                </ul>
+            </li>
+            <li><a href="{% url  'portofolio:Contactos' %}">Contacto</a></li>
+            <li><a href="#myFooter">Rodapé</a></li>
+            <li>
+                <button id="darkmode-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-sharp fa-light fa-moon"></i>
+                    <i class="fa-sharp fa-light fa-sun"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
 </header>
 <main>
     {% block main %}
@@ -98,27 +101,36 @@
             <p>Acredite em você mesmo e nos seus sonhos. Não deixe de lutar pelo que acredita!</p>
         </div>
 
+
     {% endblock %}
 
+    <div class="background">
+        <div class="box">
+            <div class="wave -one"></div>
+            <div class="wave -two"></div>
+            <div class="wave -three"></div>
+        </div>
+    </div>
 
-        <script>
-            const darkmodeToggle = document.querySelector('#darkmode-toggle');
 
-            darkmodeToggle.addEventListener('click', () => {
-                document.body.classList.toggle('darkmode');
-            });
-        </script>
+    <script>
+        const darkmodeToggle = document.querySelector('#darkmode-toggle');
 
+        darkmodeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('darkmode');
+        });
+    </script>
 
 
 </main>
 
-    <footer id="myFooter">
-        <section>
-            <img src="{% static 'portofolio/imagem/lusofona-png.png' %}" alt="Universidade Lusófona de Humanidades e Tecnologias"
-                 class="university-logo" style="width:60px;">
-            <p>Wisley F. F. Da Costa | a22103352 | Programação Web 2023</p>
-        </section>
-    </footer>
+<footer id="myFooter">
+    <section>
+        <img src="{% static 'portofolio/imagem/lusofona-png.png' %}"
+             alt="Universidade Lusófona de Humanidades e Tecnologias"
+             class="university-logo" style="width:60px;">
+        <p>Wisley F. F. Da Costa | a22103352 | Programação Web 2023</p>
+    </section>
+</footer>
 </body>
 </html>

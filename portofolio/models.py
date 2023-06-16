@@ -1,11 +1,11 @@
 from django.db import models
 
+
+
 # Create your models here.
 
-class Account(models.Model):
+class Blog(models.Model):
     username = models.CharField(max_length=100)
-    github_repo_link = models.URLField()
-    pythonanywhere_link = models.URLField()
 
 class Area(models.Model):
     name = models.CharField(max_length=100)
@@ -34,6 +34,7 @@ class Comment(models.Model):
 
 class Like(models.Model):
     article = models.ForeignKey(Article, on_delete=models.CASCADE)
+
 
 
 
