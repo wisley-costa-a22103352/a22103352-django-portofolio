@@ -1,4 +1,4 @@
-{% extends 'portofolio/Hero_Page.html' %}
+{% extends 'portofolio/Landing_Page/Hero_Page.html' %}
 
 {% block main %}
     <h1>{{ blog.nome }}</h1>
@@ -8,14 +8,14 @@
             <h2>Áreas</h2>
             <ul>
                 {% for area in areas %}
-                    <li>{{ area.nome }}</li>
+                    <li>{{ area.name }}</li>
                 {% endfor %}
             </ul>
 
             <h2>Autores</h2>
             <ul>
                 {% for autor in autores %}
-                    <li>{{ autor.nome }}</li>
+                    <li>{{ autor.name }}</li>
                 {% endfor %}
             </ul>
         </div>
@@ -24,11 +24,8 @@
             <h2>Artigos</h2>
             {% for artigo in artigos %}
                 <div class="artigo">
-                    <h3>{{ artigo.titulo }}</h3>
-                    <p>{{ artigo.conteudo }}</p>
-
-                    <img src="{{ article.image }}" alt="{{ article.title }}">
-
+                    <h3>{{ artigo.title }}</h3>
+                    <p>{{ artigo.text }}</p>
                 </div>
             {% endfor %}
         </div>

@@ -1,4 +1,4 @@
-{% extends 'portofolio/Hero_Page.html' %}
+{% extends 'portofolio/Landing_Page/Hero_Page.html' %}
 {% load static %}
 
 {% block titulo %}
@@ -20,7 +20,7 @@
         <p class="year">2016-2017</p>
         <p class="degree">Ciências Físicas e Biológicas</p>
         <p class="institution">C. Escolar Emanuel Kutolola</p>
-        <img class="certificate" src="certificado_escola.png" alt="Certificado de Conclusão da Escola">
+        <img class="certificate" src="{% static 'portofolio/imagem/' %}" alt="Certificado de Conclusão da Escola">
     </div>
 
     <div class="school">

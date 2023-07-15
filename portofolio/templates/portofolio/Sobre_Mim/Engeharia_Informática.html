@@ -1,4 +1,4 @@
-{% extends 'portofolio/Hero_Page.html' %}
+{% extends 'portofolio/Landing_Page/Hero_Page.html' %}
 {% load static %}
 
 {% block titulo %}
@@ -23,30 +23,24 @@
             e cheio de oportunidades.</p>
     </div>
 
-    <form action="submit.php" method="POST">
-        <h2>Formulário de Inscrição</h2>
-        <p>Por favor, preencha o formulário abaixo para se inscrever no curso de Engenharia Informática:</p>
 
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required>
+    <div class="nova_tarefa">
+        <form action="" method="POST">
+            <h2>Formulário de Inscrição</h2>
+            <p>Por favor, preencha o formulário abaixo para se inscrever no curso de Engenharia Informática:</p>
+            {% csrf_token %}
+            {{ form.as_p }}
 
-        <label for="course">Curso:</label>
-        <input type="text" id="course" name="course" required>
+            <a href="{% url 'portofolio:Engeharia_Informática' %}" role="button" class="btn btn-warning">Cancelar</a>
+            <input type="submit" value="Enviar" class="btn btn-success">
+        </form>
+    </div>
 
-        <label for="academic-level">Nível Acadêmico:</label>
-        <select id="academic-level" name="academic-level" required>
-            <option value="" selected disabled>Selecione o nível acadêmico</option>
-            <option value="Secundário">Secundário</option>
-            <option value="Licenciatura">Licenciatura</option>
-            <option value="Mestrado">Mestrado</option>
-            <option value="Doutoramento">Doutoramento</option>
-        </select>
 
-        <label for="motivation">Motivo para fazer o curso:</label>
-        <textarea id="motivation" name="motivation" required></textarea>
 
-        <input type="submit" value="Enviar">
-    </form>
+
+
+
 
     <div class="encouragement">
         <h2>Comece sua jornada em Engenharia Informática!</h2>

@@ -1,0 +1,9 @@
+{% extends 'portofolio/Landing_Page/Hero_Page.html' %}
+
+<h1>{% if post %}Editar{% else %}Criar{% endif %} Post</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Salvar</button>
+</form>

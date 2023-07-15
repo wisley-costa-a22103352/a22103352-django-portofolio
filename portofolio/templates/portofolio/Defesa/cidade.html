@@ -1,0 +1,30 @@
+{% extends 'portofolio/Landing_Page/Hero_Page.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'portofolio/css/cidade.html' %}">
+    <link rel="stylesheet" href="{% static 'portofolio/css/Nav_Footer.css' %}">
+
+{% endblock link %}
+
+{% block main %}
+    <h1>{{ Cidade.nome }}</h1>
+
+    <div class="Cidade">
+        <div class="col-6">
+            <h2>Nome</h2>
+            <ul>
+                {% for cidade_nome in cidade_nome %}
+                    <li>{{ cidade_nome.name }}</li>
+                {% endfor %}
+            </ul>
+
+            <h2>Pais</h2>
+            <ul>
+                {% for pais in pais %}
+                    <li>{{ pais.name }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}
