@@ -1,0 +1,113 @@
+{% extends 'portofolio/calculadoras/base.html' %}
+{% load static %}
+
+{% block title %}Calculadora Científica{% endblock %}
+
+{% block content %}
+    <div class="fundo">
+        <h1>Bem-vindo(a) à calculadora científica! Use os botões abaixo para realizar cálculos avançados</h1>
+        <div class="calculadora">
+            <h2>Calculadora Científica</h2>
+            <label for="resultado"></label><input type="text" id="resultado" readonly>
+            <table>
+                <tr>
+                    <td>
+                        <button class="botao-funcao" onclick="limpar()">C</button>
+                    </td>
+                    <td>
+                        <button class="botao-funcao" onclick="apagar()">&lt;</button>
+                    </td>
+                    <td colspan="2">
+                        <button class="botao-funcao" onclick="sen()">sin</button>
+                    </td>
+                    <td colspan="2">
+                        <button class="botao-funcao" onclick="cos()">cos</button>
+                    </td>
+                    <td colspan="2">
+                        <button class="botao-funcao" onclick="tan()">tan</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="botao" onclick="adicionar('7')">7</button>
+                    </td>
+                    <td>
+                        <button class="botao" onclick="adicionar('8')">8</button>
+                    </td>
+                    <td>
+                        <button class="botao" onclick="adicionar('9')">9</button>
+                    </td>
+                    <td>
+                        <button class="botao-funcao" onclick="adicionar('/')">÷</button>
+                    </td>
+                    <td>
+                        <button class="botao-funcao" onclick="raiz()">√</button>
+                    </td>
+                    <td>
+                        <button class="botao-funcao" onclick="exponencial()">x^y</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="botao" onclick="adicionar('4')">4</button>
+                    </td>
+                    <td>
+                        <button class="botao" onclick="adicionar('5')">5</button>
+                    </td>
+                    <td>
+                        <button class="botao" onclick="adicionar('6')">6</button>
+                    </td>
+                    <td>
+                        <button class="botao-funcao" onclick="adicionar('*')">*</button>
+                    </td>
+                    <td>
+                        <button class="botao-funcao" onclick="adicionar('(')">(</button>
+                    </td>
+                    <td>
+                        <button class="botao-funcao" onclick="adicionar(')')">)</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="botao" onclick="adicionar('1')">1</button>
+                    </td>
+                    <td>
+                        <button class="botao" onclick="adicionar('2')">2</button>
+                    </td>
+                    <td>
+                        <button class="botao" onclick="adicionar('3')">3</button>
+                    </td>
+                    <td>
+                        <button class="botao-funcao" onclick="adicionar('-')">-</button>
+                    </td>
+                    <td>
+                        <button class="botao" onclick="adicionar('0')">0</button>
+                    </td>
+                    <td>
+                        <button class="botao" onclick="adicionar('.')">.</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="botao-funcao" onclick="log()">log</button>
+                    </td>
+                    <td>
+                        <button class="botao-funcao" onclick="adicionar('**')">x<sup>y</sup></button>
+                    </td>
+                    <td>
+                        <button class="botao-funcao" onclick="adicionar('%')">%</button>
+                    </td>
+                    <td>
+                        <button class="botao-funcao" onclick="adicionar('+')">+</button>
+                    </td>
+                    <td colspan="2">
+                        <button class="botao-resultado" onclick="calcular()">=</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'portofolio/css/calculadoras/cientifica.css' %}">
+    <script src="{% static 'portofolio/javaScript/calculadora-cientifica.js' %}"></script>
+{% endblock %}

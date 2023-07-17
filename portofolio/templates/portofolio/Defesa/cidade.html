@@ -1,16 +1,9 @@
-{% extends 'portofolio/Landing_Page/Hero_Page.html' %}
 {% load static %}
 
-{% block link %}
-    <link rel="stylesheet" href="{% static 'portofolio/css/cidade.html' %}">
-    <link rel="stylesheet" href="{% static 'portofolio/css/Nav_Footer.css' %}">
-
-{% endblock link %}
-
 {% block main %}
-    <h1>{{ Cidade.nome }}</h1>
+    <h1>{{ cidade.nome }}</h1>
 
-    <div class="Cidade">
+    <div class="cidade">
         <div class="col-6">
             <h2>Nome</h2>
             <ul>

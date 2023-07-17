@@ -1,0 +1,36 @@
+{% extends 'portofolio/Landing_Page/Hero_Page.html' %}
+{% load static %}
+
+{% block main %}
+    <link rel="stylesheet" href="{% static 'portofolio/css/autenticacao/autenticacao.css' %}">
+    <div class="container">
+        <h1>Lista de Projetos</h1>
+
+        <ul>
+            {% for projeto in projetos %}
+                <li>
+                    {% if projeto.foto %}
+                        <img src="{{ projeto.foto.url }}" alt="Foto do projeto">
+                    {% endif %}
+                    <h3>{{ projeto.title }}</h3>
+                    <p>{{ projeto.content }}</p>
+                    <p>Data: {{ projeto.data }}</p>
+                    <p>Nota: {{ projeto.nota }}</p>
+                    {% if user.is_authenticated %}
+                        <div class="d-flex justify-content-end">
+                            <a href="{% url 'portofolio:projeto_update' projeto.pk %}" class="btn btn-primary me-2">Editar</a>
+                            <a href="{% url 'portofolio:projeto_delete' projeto.pk %}"
+                               class="btn btn-danger">Excluir</a>
+                        </div>
+                    {% endif %}
+                </li>
+            {% empty %}
+                <li>Nenhum projeto encontrado.</li>
+            {% endfor %}
+        </ul>
+
+        {% if user.is_authenticated %}
+            <a href="{% url 'portofolio:projeto_create' %}" class="btn btn-success mt-3">Criar novo projeto</a>
+        {% endif %}
+    </div>
+{% endblock %}

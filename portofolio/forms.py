@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from .models import Inscricao, Tarefa, Post
+from .models import Inscricao, Tarefa, Post, Escolas, Projetos
 from django import forms
 
 
@@ -8,6 +8,10 @@ class Inscricao_form(ModelForm):
         model = Inscricao
         fields = '__all__'
 
+class Cidade_form(ModelForm):
+    class Meta:
+        model = Inscricao
+        fields = '__all__'
 
 class TarefaForm(ModelForm):
     class Meta:
@@ -37,4 +41,15 @@ class TarefaForm(ModelForm):
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'content')
+        fields = ('title', 'content', 'photo', 'video', 'video_description')
+
+class EscolaForm(forms.ModelForm):
+    class Meta:
+        model = Escolas
+        fields = ['logo', 'degree', 'instituion']
+
+
+class ProjetoForm(forms.ModelForm):
+    class Meta:
+        model = Projetos
+        fields = ['foto', 'title','content' , 'data', 'nota']

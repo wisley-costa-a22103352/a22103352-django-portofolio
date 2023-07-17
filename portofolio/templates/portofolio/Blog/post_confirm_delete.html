@@ -1,11 +1,15 @@
 {% extends 'portofolio/Landing_Page/Hero_Page.html' %}
 
-<h1>Confirmar exclusão</h1>
+{% block main %}
+<div class="container">
+    <h1>Confirmar exclusão</h1>
 
-<p>Você tem certeza que deseja excluir o post "{{ post.title }}"?</p>
+    <p>Você tem certeza que deseja excluir o post "{{ post.title }}"?</p>
 
-<form method="post">
-    {% csrf_token %}
-    <button type="submit">Excluir</button>
-    <a href="{% url 'post_list' %}">Cancelar</a>
-</form>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Excluir</button>
+        <a href="{% url 'portofolio:post_list' %}" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+{% endblock %}

@@ -9398,7 +9398,7 @@ jQuery.extend( {
 			text: "text/plain",
 			html: "text/html",
 			xml: "application/xml, text/xml",
-			json: "application/json, text/javascript"
+			json: "application/json, text/calculadoras"
 		},
 
 		contents: {
@@ -10220,7 +10220,7 @@ jQuery.ajaxPrefilter( function( s ) {
 // Install script dataType
 jQuery.ajaxSetup( {
 	accepts: {
-		script: "text/javascript, application/javascript, " +
+		script: "text/calculadoras, application/calculadoras, " +
 			"application/ecmascript, application/x-ecmascript"
 	},
 	contents: {

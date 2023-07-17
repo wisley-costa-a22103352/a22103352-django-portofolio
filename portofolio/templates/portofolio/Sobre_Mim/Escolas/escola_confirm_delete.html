@@ -1,0 +1,15 @@
+{% extends 'portofolio/Landing_Page/Hero_Page.html' %}
+
+{% block main %}
+<div class="container">
+    <h1>Confirmar exclusão</h1>
+
+    <p>Você tem certeza que deseja excluir a escola "{{ escola.instituion }}"?</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Excluir</button>
+        <a href="{% url 'portofolio:escola_list' %}">Cancelar</a>
+    </form>
+</div>
+{% endblock %}

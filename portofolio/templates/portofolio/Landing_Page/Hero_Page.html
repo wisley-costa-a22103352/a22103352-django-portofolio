@@ -14,7 +14,6 @@
     {% block link %}
         <link rel="stylesheet" href="{% static 'portofolio/css/Estilo1.css' %}">
         <link rel="stylesheet" href="{% static 'portofolio/css/Nav_Footer.css' %}">
-
     {% endblock link %}
 
 </head>
@@ -37,7 +36,7 @@
                     <li class="dropdown-submenu">
                         <a href="#">Educação</a>
                         <ul class="dropdown-menu">
-                            <li><a href="{% url  'portofolio:Escolas' %}">Escolas</a></li>
+                            <li><a href="{% url 'portofolio:escola_list' %}">Escolas</a></li>
                         </ul>
                     </li>
                     <li class="dropdown-submenu">
@@ -56,7 +55,7 @@
             <li class="dropdown">
                 <a href="#" data-toggle="dropdown">Projetos</a>
                 <ul class="dropdown-menu">
-                    <li><a href="{% url 'portofolio:Projetos' %}">Projetos realizados em diversas UCs</a></li>
+                    <li><a href="{% url 'portofolio:projeto_list' %}">Projetos realizados em diversas UCs</a></li>
                     <li><a href="#">Projetos realizados por mim</a></li>
                     <li><a href="#">Projetos de fim de curso realizados que achei interessantes</a></li>
                 </ul>
@@ -76,14 +75,21 @@
                 </ul>
             </li>
             <li><a href="{% url 'portofolio:post_list' %}">Blog</a></li>
-            <li><a href="{% url 'portofolio:cidade' %}">Cidade</a></li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Calculadoras</a>
+                <ul class="dropdown-menu">
+                    <li><a href="{% url 'portofolio:calculadora' %}">Calculadora Básica</a></li>
+                    <li><a href="{% url 'portofolio:calculadora_cientifica' %}">Calculadora Científica</a></li>
+                </ul>
+            </li>
             <li class="dropdown">
                 <a href="#" data-toggle="dropdown">Sobre este website</a>
                 <ul class="dropdown-menu">
                     <li><a href="{% url  'portofolio:Tecnologias' %}">Tecnologias Usadas</a></li>
                     <li><a href="{% url  'portofolio:Padrões' %}">Padrões Usados</a></li>
                 </ul>
-            </li>
+                -
+            <li><a href="{% url 'portofolio:weather' %}">Web Scraping</a></li>
             <li><a href="{% url  'portofolio:Contactos' %}">Contacto</a></li>
             <li><a href="#myFooter">Rodapé</a></li>
             <li>
@@ -100,10 +106,10 @@
         <div class="container">
             <h1>Seja Bem-Vindo!</h1>
             <p>Acredite em você mesmo e nos seus sonhos. Não deixe de lutar pelo que acredita!</p>
+            <a href="https://youtu.be/H8sdX0k4HLo">Assista ao vídeo</a>
         </div>
-
-
     {% endblock %}
+
 
     <div class="background">
         <div class="box">

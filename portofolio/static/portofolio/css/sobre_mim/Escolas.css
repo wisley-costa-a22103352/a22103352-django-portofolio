@@ -32,3 +32,9 @@
         .institution {
             color: #999;
         }
+
+         .school img {
+            max-width: 1%;
+            height: auto;
+            margin-bottom: 10px;
+        }

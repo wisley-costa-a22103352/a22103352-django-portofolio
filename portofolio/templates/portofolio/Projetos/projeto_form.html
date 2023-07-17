@@ -1,0 +1,14 @@
+{% extends 'portofolio/Landing_Page/Hero_Page.html' %}
+{% load static %}
+
+{% block main %}
+    <div class="container">
+        <h1>{% if projeto %}Editar{% else %}Criar{% endif %} Projeto</h1>
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+    </div>
+{% endblock %}
